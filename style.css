@@ -1,0 +1,118 @@
+/* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "MS Sans Serif", Arial, sans-serif;
+  background: url("assets/moquette.png") repeat;
+  background-size: auto;
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;*/
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* stack windows vertically */
+  align-items: center;    /* center horizontally */
+  padding-top: 100px;
+}
+
+/* Retro window box */
+.window {
+  width: 90%;
+  max-width: 600px;
+  margin: 10px;
+  background: #c0c0c0;
+  border: 2px solid #000;
+}
+
+/* Title bar */
+.title-bar {
+  background: linear-gradient(to right, navy, #000080);
+  color: white;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Window body */
+.window-body {
+  padding: 8px;
+  font-size: 16px;
+  background: #e0e0e0;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #808080;
+  border-right: 2px solid #808080;
+}
+
+/* Buttons styled like Win98 */
+.button {
+  display: inline-block;
+  padding: 4px 8px;
+  margin: 5px auto;
+  background: #c0c0c0;
+  /*border: 2px solid #808080;*/
+  box-shadow: inset 2px 2px #fff, inset -2px -2px #000;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.button:active {
+  box-shadow: inset -2px -2px #fff, inset 2px 2px #000;
+}
+
+/* Video container */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Image 1 */
+.first-img {
+  width: 100%;
+  box-shadow: inset -2px -2px #fff, inset 2px 2px #000;
+  overflow: hidden;
+  margin: 0 auto; /* centers it inside the box */
+}
+
+/* Image 2 */
+.second-img {
+  width: 100%;
+  box-shadow: inset -2px -2px #fff, inset 2px 2px #000;
+  overflow: hidden;
+  margin: 0 auto; /* centers it inside the box */
+}
+
+/* Image 3 */
+.third-img {
+  width: 100%;
+  box-shadow: inset -2px -2px #fff, inset 2px 2px #000;
+  overflow: hidden;
+  margin: 0 auto; /* centers it inside the box */
+ }
+
+/* Margin below boxes */
+.window {
+  margin-bottom: 100px;
+}
+
+.spacer {
+  height: 10px;
+  width: 100%; /* make it span the body horizontally */
+  flex-shrink: 0; /* prevent it from collapsing */
+}
