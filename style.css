@@ -164,8 +164,8 @@ body {
 .gig-links-container {
   position: relative;
   width: 100%;
-  background: url("assets/moquette2.png") /*no-repeat */center top;
-  /*background-size: cover; /* makes image fill as height changes */
+  background: url("assets/MOQ.PNG") center top;
+  /* makes image fill as height changes */
   background-size: cover;
   border: 2px solid #000;
   padding: 10px 0; /* space for top and bottom */
@@ -197,4 +197,5 @@ body {
   position: relative;
   z-index: 1; /* keeps buttons above overlay */
 }
+
 
